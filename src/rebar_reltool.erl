@@ -116,7 +116,7 @@ check_vsn() ->
         {error, bad_name} ->
             ?ABORT("Reltool support requires the reltool application "
                    "to be installed!", []);
-        Path ->
+        _ ->
             ok
     end.
 
